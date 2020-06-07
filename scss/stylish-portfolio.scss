@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+@import "global";
+@import "masthead";
+@import "sidebar";
+@import "services";
+@import "callout";
+@import "portfolio";
+@import "footer";
+@import "bootstrap-overrides";
+
+.form-valid  {
+  opacity:0.5;
+}
+
+.form-control-label abbr {
+  text-decoration: none;
+  font-weight: normal;
+}
