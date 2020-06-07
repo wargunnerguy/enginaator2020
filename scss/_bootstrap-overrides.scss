@@ -51,3 +51,9 @@ a {
 .text-secondary {
   color: $secondary !important;
 }
+.input-group>.input-group-prepend {
+  flex: 0 0 22%;
+}
+.input-group .input-group-text {
+  width: 100%;
+}
