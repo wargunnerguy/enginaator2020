@@ -19,7 +19,8 @@
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <link href="css/stylish-portfolio.min.css" media="screen" rel="stylesheet">
+  <link href="css/print.min.css" media="print" rel="stylesheet">
 
 </head>
 
@@ -35,19 +36,7 @@
         <a class="js-scroll-trigger" href="#page-top">Enginaator 2020</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
+        <a class="js-scroll-trigger" href="#page-top">Kodimatka</a>
       </li>
     </ul>
   </nav>
@@ -55,93 +44,77 @@
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h3 class="mb-5">
-        <em>Enginaator 2020</em>
-      </h3>
+      <h1 class="mb-1">Enginaator 2020</h1>
       <div class="card bg-light">
         <form class="card-body" novalidate="" action="" method="" id="bootstrapForm">
-          <div class="input-group form-group">
-              <div class="input-group-prepend">
-                  <span class="input-group-text justify-content-center" id="inputGroup-sizing-default">Eesnimi</span>
-              </div>
-              <input type="text" class="form-control" name="i1" id="input1" placeholder="Mari" required>
-              <div class="valid-feedback">Eesnimi kombes! Ea poiss oled.</div>
-            <div class="invalid-feedback">Ole hea pane eesnimi ka ikka</div>
+
+          <div class="form-group">
+            <label class="h4 form-control-label" for="input1">Eesnimi<abbr class="text-danger" title="This is required">*</abbr></label>
+            <input type="text" class="form-control" name="i1" id="input1" required>
+            <div class="valid-feedback">Eesnimi OK</div>
+            <div class="invalid-feedback">Pane Eesnimi..</div>
           </div>
 
-          <div class="input-group form-group">
-              <div class="input-group-prepend">
-                  <span class="input-group-text justify-content-center" id="inputGroup-sizing-default">Perenimi</span>
-              </div>
-            <input type="text" class="form-control" name="i1" id="input1" placeholder="Mets" required>
-            <div class="valid-feedback">Perenimi kombes! Maladets.</div>
-            <div class="invalid-feedback">Pole nii salajane värk ju, pane see kirja pls</div>
+          <div class="form-group">
+            <label class="h4 form-control-label" for="input1">Perenimi<abbr class="text-danger" title="This is required">*</abbr></label>
+            <input type="text" class="form-control" name="i1" id="input1" required>
+            <div class="valid-feedback">Perenimi OK</div>
+            <div class="invalid-feedback">Pane perenimi..</div>
           </div>
 
 
-          <div class="input-group form-group">
-              <div class="input-group-prepend">
-                  <span class="input-group-text justify-content-center" id="inputGroup-sizing-default">Isikukood</span>
-              </div>
-            <input type="number" placeholder="39312094910"
+          <div class="form-group">
+            <label class="h4 form-control-label" for="input1">Isikukood<abbr class="text-danger" title="This is required">*</abbr></label>
+            <input type="number"
                    pattern="[0-9]{11}" class="form-control" name="i1" id="input1" required>
-            <div class="valid-feedback">Isikukood kombes</div>
-            <div class="invalid-feedback">Pane norm isikukood nüüd</div>
+            <div class="valid-feedback">Isikukood korras</div>
+            <div class="invalid-feedback">Vigane isikukood. See väli on kohustuslik.</div>
           </div>
 
-          <div class="input-group form-group">
-              <div class="input-group-prepend">
-                  <span class="input-group-text justify-content-center" id="inputGroup-sizing-default">Telefoninumber</span>
-              </div>
-            <input type="number" placeholder="53488487"
-                   pattern="\d*" class="form-control" name="i1" id="input1" required>
-            <div class="valid-feedback">Telefoninumber kombes</div>
-            <div class="invalid-feedback">Pane norm number, ära ole siuke</div>
+          <div class="form-group">
+            <label class="h4 form-control-label" for="input1">E-maili aadress<abbr class="text-danger" title="This is required">*</abbr></label>
+            <input type="email" class="form-control" name="i1" id="input1">
+            <div class="valid-feedback">E-mail korras</div>
+            <div class="invalid-feedback">Pane e-mail, mai spämmi ausalt võibolla!!</div>
           </div>
 
-
-          <div class="input-group form-group">
-              <div class="input-group-prepend">
-                  <span class="input-group-text justify-content-center" id="inputGroup-sizing-default">E-mail</span>
-              </div>
-            <input type="email" placeholder="mina@enginaator.ee"
-                    class="form-control" name="i1" id="input1" required>
-            <div class="valid-feedback">E-mail kombes</div>
-            <div class="invalid-feedback">E-mail vales vormis. Pane norm email, ma ei saada spämmi!! Ausalt võib olla!!</div>
+          <div class="form-group">
+            <label class="h4 form-control-label" for="input1">Telefoninumber</label>
+            <input type="number" class="form-control" name="i1" id="input1">
           </div>
 
-          <div class="input-group form-group">
-              <div class="input-group-prepend">
-                  <span class="input-group-text justify-content-center" id="inputGroup-sizing-default">Keel</span>
-              </div>
-            <select class="form-control" id="exampleFormControlSelect1">
+          <div class="form-group controlSelect_keel">
+            <label class="h4 form-control-label" for="input1">Keel</label>
+              <select class="form-control" id="input1">
+              <option>Ükskõik</option>
               <option>Eesti</option>
               <option>English</option>
-              <option>Русский</option>
+              <option>Koroona2020</option>
             </select>
           </div>
 
-          <div class="input-group form-group">
-              <div class="input-group-prepend">
-                  <span class="input-group-text justify-content-center" id="inputGroup-sizing-default">E-mail</span>
-              </div>
-            <input type="email" placeholder="mina@enginaator.ee"
-                   class="form-control" name="i1" id="input1" required>
-            <div class="valid-feedback">E-mail kombes</div>
-            <div class="invalid-feedback">E-mail vales vormis. Pane norm email, ma ei saada spämmi!! Ausalt võib olla!!</div>
+          <div class="form-group just_for_print">
+            <label class="h4 form-control-label" for="input1">Keel</label>
+            <input type="text" class="form-control" name="i1" id="input1">
           </div>
 
-          <div class="input-group form-group">
-              <div class="input-group-prepend">
-                  <span class="input-group-text justify-content-center" id="inputGroup-sizing-default">Aadress</span>
-              </div>
-            <input type="number" placeholder="53488487"
-                    class="form-control" name="i1" id="input1">
+          <div class="form-group">
+            <label class="h4 form-control-label" for="input1">Aadress<abbr class="text-danger" title="This is required">*</abbr></label>
+            <input type="number" class="form-control" name="i1" id="input1" required>
+            <div class="valid-feedback">Aadress korras</div>
+            <div class="invalid-feedback">Pane normaalne aadress mees!</div>
           </div>
 
-
+          <div class="form-row just_for_print">
+            <div class="col">
+              <input type="text" class="form-control" id="today_date">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" >
+            </div>
+          </div>
           <div>
-            <button type="submit" class="btn btn-secondary">Saada</button>
+            <button type="submit" class="btn btn-secondary" id="send_btn">Prindi</button>
           </div>
 
         </form>
@@ -150,7 +123,24 @@
       </div>
       <!-- /.card -->
     </div>
+    <div class="overlay"></div>
   </header>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
 </body>
 
 </html>

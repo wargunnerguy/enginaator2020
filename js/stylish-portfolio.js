@@ -62,8 +62,7 @@ var onMapClickHandler = function(event) {
 }
 // Enable map zooming with mouse scroll when the user clicks the map
 $('.map').on('click', onMapClickHandler);
-
-// adapted from https://www.codeply.com/go/mhkMGnGgZo/bootstrap-4-validation-example
+/// adapted from https://www.codeply.com/go/mhkMGnGgZo/bootstrap-4-validation-example
 
 $("#bootstrapForm").submit(function(event) {
 
@@ -75,10 +74,19 @@ $("#bootstrapForm").submit(function(event) {
   https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/checkValidity
   */
   if (vForm[0].checkValidity() === false) {
+
     event.preventDefault()
     event.stopPropagation()
   } else {
 
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+    document.getElementById("today_date").innerHTML = today;
+    document.get
     // Replace alert with ajax submit here...
     alert("your form is valid and ready to send");
 
